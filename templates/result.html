@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>Результат</title></head>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles_result.css') }}">
+<body>
+    <div>
+        <h1>Результат</h1>
+        <p>Вы набрали: {{ score }} баллов</p>
+        {% if score|int > 2 %}
+        <img src="{{ url_for('static', filename='images/cool_bad.png') }}" alt="" width="200" class="cool">
+        {% else %}
+        <img src="{{ url_for('static', filename='images/cool_bad.png') }}" alt="" width="200" class="bad">
+        {% endif %}
+    </div>
+</body>
+</html>

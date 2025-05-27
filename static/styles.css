@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(33, 37, 41);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    font-size: 20px;
+    background-color: rgb(52, 58, 64);
+    padding: 20px 100px 20px 100px;
+    list-style-type: none;
+    border-radius: 10px;
+    border: solid black 3px;
+    z-index: 1;
+    box-shadow: 5px 10px 20px;
+    transition: 0.7s;
+}
+ul:hover{
+    box-shadow: 10px 15px 20px ;
+}
+li{
+    background-color: rgb(173, 181, 189);
+    padding: 10px 40px 10px 40px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(255, 247, 248);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    padding: 0px 0px 0px 60px;
+    color: rgb(206, 212, 218);
+}
+
+li:hover{
+    scale: 1.05;
+    transition: 0,3s;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.anime {
+    position: fixed;
+    width: 170px;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-165%);
+    filter: drop-shadow(10px 0px 9px rgb(155, 133, 129));
+    transition: 0.7s;
+    z-index: -1;
+}
+
+ul:hover .anime{
+    top: 155px;
+}

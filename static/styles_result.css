@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(33, 37, 41);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    font-size: 20px;
+    background-color: rgb(52, 58, 64);
+    padding: 20px 100px 20px 100px;
+    list-style-type: none;
+    border-radius: 10px;
+    border: solid black 3px;
+    z-index: 1;
+    box-shadow: 5px 10px 20px;
+    transition: 0.7s;
+}
+h1{
+    color: rgb(206, 212, 218);
+}
+p{
+    color: rgb(206, 212, 218);
+}
+div:hover{
+    box-shadow: 10px 15px 20px rgb(0, 0, 0);
+}
+.bad{
+    filter: hue-rotate(270deg);
+    animation: forwards 1s bad;
+}
+@keyframes bad{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.cool{
+    animation: forwards 1s cool;
+}
+@keyframes cool{
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

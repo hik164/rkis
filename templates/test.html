@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>Тест</title></head>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles_test.css') }}">
+<body>
+    <div>
+    <h2>{{ question.text }}</h2>
+    <form method="post">
+        {% for answer in question.answers %}
+            <span><input type="radio" name="answer" value="{{ answer }}" required> {{ answer }}</span><br>
+        {% endfor %}
+        <button type="submit">Ответить</button>
+    </form>
+    </div>
+</body>
+</html>
